@@ -1,0 +1,12 @@
+<ion-content padding>
+
+  <ion-row>
+    <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad> <!--Present in modal-->
+  </ion-row>
+  
+  <ion-row>
+    <button ion-button (click)="drawSave()">Sign and Agree</button>
+    <button ion-button (click)="drawClear()">Clear</button>
+  </ion-row>
+
+</ion-content>

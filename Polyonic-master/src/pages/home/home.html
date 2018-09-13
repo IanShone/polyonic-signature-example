@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Polyonic!</h2>
+
+  <ion-row>
+    <img style="border: solid lightgrey 2px; width: 500px; height: 300px;" src="{{signature}}" alt="">
+  </ion-row>
+
+  <ion-row>
+    <p>
+      <button ion-button (click)="openSignatureModal(signature)">SIGN</button>
+    </p>
+  </ion-row> 
+
+</ion-content>
